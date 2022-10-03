@@ -11,13 +11,15 @@
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
-    "json-server": "^0.15.1"
+    "gh-pages": "^4.0.0",
+    "json-server": "^0.15.1",
+    "webpack-cli": "^4.10.0"
   },
   "scripts": {
     "start": "PORT=8000 react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "webpack --config webpack.config.js",
+    "build": "react-scripts build",
     "server": "json-server --watch db.json -p 8002"
   },
   "eslintConfig": {
